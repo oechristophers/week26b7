@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create account</title>
+  </head>
+  <body>
+    <h1>Create account form</h1>
+
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <ul>
+          <li>
+            <label for="fullName">Full name</label>
+            <input
+              type="text"
+              name="name"
+              id="fullName"
+              placeholder="enter your full name"
+              required
+            />
+          </li>
+
+          <li>
+            <label for="dob">Date of birth</label>
+            <input type="date" name="date" id="dob" required />
+          </li>
+          <li>
+            <label for="address">Address</label>
+            <textarea
+              name="address"
+              id="address"
+              cols="30"
+              rows="2"
+              maxlength="20"
+            ></textarea>
+          </li>
+          <li>
+            <label for="soo">State of Origin</label>
+            <select>
+              <optgroup label="South West ">
+                <option>Ekiti</option>
+                <option>Lagos</option>
+                <option>Osun</option>
+                <option>Ondo</option>
+                <option>Ogun</option>
+                <option>Oyo</option>
+              </optgroup>
+
+              <optgroup label="South East ">
+                <option>Abia</option>
+                <option>Anambara</option>
+                <option>Ebonyi</option>
+                <option>Enugu</option>
+                <option>Imo</option>
+              </optgroup>
+
+              <optgroup label="South South">
+                <option>South-Akwa-Ibom</option>
+                <option>Bayelsa</option>
+                <option>Crossriver</option>
+                <option>Delta</option>
+                <option>Edo</option>
+                <option>Rivers</option>
+              </optgroup>
+
+              <optgroup label="North West">
+                <option>Kaduna</option>
+                <option>Kastina</option>
+                <option>Kano</option>
+                <option>Kebbi</option>
+                <option>Sokoto</option>
+                <option>Jigawa</option>
+                <option>Zamfara</option>
+              </optgroup>
+
+              <optgroup label="North East">
+                <option>Adamawa</option>
+                <option>Bauchi</option>
+                <option>Borno</option>
+                <option>Gombe</option>
+                <option>Taraba</option>
+                <option>Yobe</option>
+              </optgroup>
+
+              <optgroup label="North Central ">
+                <option>Benue</option>
+                <option>FCT</option>
+                <option>Kogi</option>
+                <option>Kwara</option>
+                <option>Nasarrawa</option>
+                <option>Naija</option>
+                <option>Plateau</option>
+              </optgroup>
+            </select>
+          </li>
+          <li>
+            <h3>Marital status</h3>
+            <!-- The name is the same for all inputs so that it only allows for only one option to be selected -->
+            <input type="radio" name="ms" id="single" checked />
+            <label for="single">Single</label>
+
+            <input type="radio" name="ms" id="married" />
+            <label for="married">Married</label>
+
+            <input type="radio" name="ms" id="divorced" />
+            <label for="divorced">Divorced</label>
+
+            <input type="radio" name="ms" id="widowed" />
+            <label for="widowed">Widowed</label>
+          </li>
+          <li>
+            <label for="religion">Religion</label>
+            <select>
+              <option value="cr">Christian</option>
+              <option value="is">Islam</option>
+              <option value="at" selected>Atheist</option>
+              <option value="tr">Traditional</option>
+            </select>
+          </li>
+          <li>
+            <h3>Gender</h3>
+
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" />
+            <label for="female">Female</label>
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="oechristophers@gmail.com"
+            />
+          </li>
+          <li>
+            <label for="phone">Contact</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+              placeholder="+234-300-0000"
+            />
+          </li>
+          <li>
+            <h3>Valid ID</h3>
+            <input type="radio" name="id" id="nin" />
+            <label for="nin">NIN</label>
+
+            <input type="radio" name="id" id="Passport" />
+            <label for="Passport">Passport</label>
+
+            <input type="radio" name="id" id="votersCard" />
+            <label for="votersCard">Voters card</label>
+
+            <input type="file" name="validId" id="validId" />
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>
